@@ -6,7 +6,7 @@
     "postinstall": "niv material-ui@0.18.1 -d material-ui-old",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
     "start-nobrowser": "webpack-dev-server --config webpack/webpack.config.dev.js",
-    "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js && cp -ra assets/fonts dist/ && cp -a assets/slick* dist/ && cp -a assets/200.html dist/",
+    "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js && cp -a assets/fonts dist/ && cp -a assets/slick* dist/ && cp -a assets/200.html dist/",
     "deploy": "npm run build && surge ./dist --domain https://xprt-frontend.surge.sh",
     "prod": "serve ./dist -s",
     "lint": "eslint --ext .jsx --ext .js src",
