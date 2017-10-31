@@ -1,3 +1,3 @@
 export default {
-  apiRoot: 'https://xprt-backend-hundred.herokuapp.com',
+  apiRoot: 'https://api.xprt.fi',
 };
