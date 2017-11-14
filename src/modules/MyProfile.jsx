@@ -445,6 +445,10 @@ export default class MyProfile extends React.Component {
           <p style={styles.mainDivText}><DateFormat date={lecture.dateOption1} /></p>
           <p style={styles.mainDivTextBold}>Location:</p>
           <p style={styles.mainDivText}>{lecture.location}</p>
+          <p style={styles.mainDivTextBold}>Teacher email:</p>
+          <p style={styles.mainDivText}>{lecture.email}</p>
+          <p style={styles.mainDivTextBold}>Teacher phone:</p>
+          <p style={styles.mainDivText}>{lecture.phone}</p>
           <div style={styles.ButtonAlignRight}>
             <FlatButton
               onTouchTap={() => this.handleInvite(lecture.id, 'declined')}
@@ -531,6 +535,10 @@ export default class MyProfile extends React.Component {
           <p style={styles.mainDivText}>{lecture.location}</p>
           <p style={styles.mainDivTextBold}>Short description of the lecture:</p>
           <p style={styles.mainDivText}>{lecture.description}</p>
+          <p style={styles.mainDivTextBold}>Teacher email:</p>
+          <p style={styles.mainDivText}>{lecture.email}</p>
+          <p style={styles.mainDivTextBold}>Teacher phone:</p>
+          <p style={styles.mainDivText}>{lecture.phone}</p>
           <div style={styles.ButtonAlignRight}>
             <FlatButton
               onTouchTap={() => this.setState({
@@ -610,6 +618,10 @@ export default class MyProfile extends React.Component {
           <p style={styles.mainDivText}>{lecture.location}</p>
           <p style={styles.mainDivTextBold}>Short description of the lecture:</p>
           <p style={styles.mainDivText}>{lecture.description}</p>
+          <p style={styles.mainDivTextBold}>Teacher email:</p>
+          <p style={styles.mainDivText}>{lecture.email}</p>
+          <p style={styles.mainDivTextBold}>Teacher phone:</p>
+          <p style={styles.mainDivText}>{lecture.phone}</p>
         </CardText>
       </Card>
     ));
