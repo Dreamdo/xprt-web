@@ -26,6 +26,12 @@ const styles = {
     fontSize: '16px',
     color: theme.legacyPalette.primary3Color,
   },
+  footerLink: {
+    marginRight: '5%',
+    fontSize: '16px',
+    color: theme.legacyPalette.primary3Color,
+    textDecoration: 'none'
+  },
   footerText: {
     fontSize: '16px',
     color: theme.legacyPalette.primary3Color,
@@ -40,8 +46,9 @@ export default class Footer extends React.Component {
           <XprtLogoSmall />
         </div>
         <div style={styles.footerRight}>
-          <TermsModal />
-          <PrivacyModal />
+          <a href='https://auth.hundred.org/en/terms' style={styles.footerLink}>Terms of service</a>
+          <br/>
+          <a href='https://auth.hundred.org/en/privacy' style={styles.footerLink}>Privacy Policy</a>
         </div>
       </div>
     );

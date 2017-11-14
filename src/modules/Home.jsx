@@ -22,7 +22,7 @@ import XprtBackground from '../../assets/xprt-background.png';
 import mockup1 from '../../assets/mockup1.png';
 import mockup2 from '../../assets/mockup2.png';
 import mockup3 from '../../assets/mockup3.png';
-import profilePlaceholder from '../../assets/unknown.png';
+import profilePlaceholder from '../../assets/lasse.jpg';
 
 import theme from '../utils/theme';
 
@@ -323,10 +323,10 @@ export default class Home extends React.Component {
               </div>
               <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', flexDirection: 'column' }}>
                 <div>
-                  <FlatButton label="DOWNLOAD FOR IPHONE" style={styles.buttonStyle} />
+                  <FlatButton label="DOWNLOAD FOR IPHONE" style={styles.buttonStyle} href="https://itunes.apple.com/fi/app/xprt/id1257645964?mt=8"/>
                 </div>
                 <div>
-                  <FlatButton label="DOWNLOAD FOR ANDROID" style={styles.buttonStyle} />
+                  <FlatButton label="DOWNLOAD FOR ANDROID" style={styles.buttonStyle} href="https://play.google.com/store/apps/details?id=org.hundred.xprt"/>
                 </div>
               </div>
             </div>
@@ -383,41 +383,34 @@ export default class Home extends React.Component {
             <div style={styles.imageWrapper}>
               <div style={styles.emptyImage} />
               <div style={styles.leftImage}>
-                <img src={mockup1} style={styles.mockImage} alt="App screenshot" />
+                <img src={mockup3} style={styles.mockImage} alt="App screenshot" />
                 <p style={styles.imageNumber}>01</p>
-                <p style={styles.textColor}>BACON IPSUM</p>
+                <p style={styles.textColor}>BROWSE THROUGH EXPERTS</p>
                 <p style={[styles.textColor, styles.imageDescription]}>
                   {
-                    `Bacon ipsum dolor amet short loin landjaeger tongue,
-                    filet mignon ribeye hamburger spare ribs. Pork hamburger
-                    turkey tongue drumstick boudin ball tip beef ribs pancetta
-                    tail turducken pig chuck.`
+                    `All the experts available in your region will be visible as a list. 
+                    Browse them through or use the search to find the expert you\'re looking for.`
                   }
                 </p>
               </div>
               <div style={styles.centerImage}>
                 <img src={mockup2} style={styles.mockImage} alt="App screenshot" />
                 <p style={styles.imageNumber}>02</p>
-                <p style={styles.textColor}>BACON IPSUM</p>
+                <p style={styles.textColor}>CONTACT EXPERTS</p>
                 <p style={[styles.textColor, styles.imageDescription]}>
                   {
-                    `Bacon ipsum dolor amet short loin landjaeger tongue,
-                    filet mignon ribeye hamburger spare ribs. Pork hamburger
-                    turkey tongue drumstick boudin ball tip beef ribs pancetta
-                    tail turducken pig chuck.`
+                    `To go through more detailed information about the expert, check their profile and contact them via email or phone.`
                   }
                 </p>
               </div>
               <div style={styles.rightImage}>
-                <img src={mockup3} style={styles.mockImage} alt="App screenshot" />
+                <img src={mockup1} style={styles.mockImage} alt="App screenshot" />
                 <p style={styles.imageNumber}>03</p>
-                <p style={styles.textColor}>BACON IPSUM</p>
+                <p style={styles.textColor}>SEE THE LECTURES YOU HAVE BOOKED</p>
                 <p style={[styles.textColor, styles.imageDescription]}>
                   {
-                    `Bacon ipsum dolor amet short loin landjaeger tongue,
-                    filet mignon ribeye hamburger spare ribs. Pork hamburger
-                    turkey tongue drumstick boudin ball tip beef ribs pancetta
-                    tail turducken pig chuck.`
+                    `When you have confirmed meetings with the experts, 
+                    the upcoming lectures will appear to your app. You will also find sent invitations and past lectures from the same view.`
                   }
                 </p>
               </div>
@@ -429,46 +422,12 @@ export default class Home extends React.Component {
           <div style={styles.firstRow}>
             <Slider {...sliderSettings}>
               <div>
-                <img src={profilePlaceholder} alt="Sample expert" style={{ ...styles.profilePicture, filter: 'grayscale(100%)', margin: '0 auto' }} />
+                <img src={profilePlaceholder} alt="Lasse Leponiemi" style={{ ...styles.profilePicture, filter: 'grayscale(100%)', margin: '0 auto' }} />
                 <div style={styles.secondRow}>
                   <p style={[styles.descriptionText, styles.mobileFont]}>
                     {
-                       `Bacon ipsum dolor amet short loin landjaeger tongue,
-                       filet mignon ribeye hamburger spare ribs. Pork
-                       hamburger turkey tongue drumstick boudin ball tip beef
-                       ribs pancetta tail turducken pig chuck. Tongue shoulder
-                       landjaeger short loin hamburger. Meatball alcatra ham hock ribeye.
-                       Tenderloin ham swine picanha sausage.`
-                     }
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img src={profilePlaceholder} alt="Sample expert" style={{ ...styles.profilePicture, filter: 'grayscale(0%)', margin: '0 auto' }} />
-                <div style={styles.secondRow}>
-                  <p style={[styles.descriptionText, styles.mobileFont]}>
-                    {
-                       `Bacon ipsum dolor amet short loin landjaeger tongue,
-                       filet mignon ribeye hamburger spare ribs. Pork
-                       hamburger turkey tongue drumstick boudin ball tip beef
-                       ribs pancetta tail turducken pig chuck. Tongue shoulder
-                       landjaeger short loin hamburger. Meatball alcatra ham hock ribeye.
-                       Tenderloin ham swine picanha sausage.`
-                     }
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img src={profilePlaceholder} alt="Sample expert" style={{ ...styles.profilePicture, filter: 'contrast(1000%)', margin: '0 auto' }} />
-                <div style={styles.secondRow}>
-                  <p style={[styles.descriptionText, styles.mobileFont]}>
-                    {
-                       `Bacon ipsum dolor amet short loin landjaeger tongue,
-                       filet mignon ribeye hamburger spare ribs. Pork
-                       hamburger turkey tongue drumstick boudin ball tip beef
-                       ribs pancetta tail turducken pig chuck. Tongue shoulder
-                       landjaeger short loin hamburger. Meatball alcatra ham hock ribeye.
-                       Tenderloin ham swine picanha sausage.`
+                       `XPRT was built to help teachers to invite professionals to share their knowledge with local schools. 
+                       In a rapidly changing world, expertise outside school should be easily available for learners.`
                      }
                   </p>
                 </div>

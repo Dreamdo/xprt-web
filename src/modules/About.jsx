@@ -219,10 +219,10 @@ class About extends React.Component {
                 experts to your classroom.
               </p>
               <div>
-                <FlatButton label="DOWNLOAD FOR IPHONE" style={styles.buttonStyle} />
+                <FlatButton label="DOWNLOAD FOR IPHONE" style={styles.buttonStyle} href="https://itunes.apple.com/fi/app/xprt/id1257645964?mt=8"/>
               </div>
               <div>
-                <FlatButton label="DOWNLOAD FOR ANDROID" style={styles.buttonStyle} />
+                <FlatButton label="DOWNLOAD FOR ANDROID" style={styles.buttonStyle} href="https://play.google.com/store/apps/details?id=org.hundred.xprt"/>
               </div>
 
               <p style={styles.smallHeaderUnder}>EXPERTS</p>
